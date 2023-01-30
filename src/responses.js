@@ -12,6 +12,16 @@ const getIndex = (request, response) => {
   respond(request, response, index, 'text/html');
 };
 
+const getCats = (request, response) => {
+const cat = {
+  name: 'charles',
+  age: 89
+}
+
+const catString = JSON.stringify(cat);
+return respond(request, response, catString, 'application/json');
+};
+
 module.exports = {
   getCats,
   getIndex,

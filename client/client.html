@@ -25,13 +25,25 @@
   </style>
   <script>
     const sendFetchRequest = (url, acceptedType) => {
+      //const xhr = new XMLHttpRequest();
+      // FETCH API
+      const options = {
+        method: 'GET',
+        headers: {
+          'Accept': acceptedType,
+        },
+      }
 
+      fetch(url, options); // in future we will gt rid of favicon asks
     };
 
     const init = () => {
       const jsonButton = document.querySelector("#getCatsJSON");
       const xmlButton = document.querySelector("#getCatsXML");
+      const sendJSON = () => {sendFetchRequest('/cats', 'application/json')};
 
+      jsonButton.addEventListener('click'. sendJSON);
+      xmlButton.addEventListener('click', () => sendFetchRequest('/cats', 'text/xml'));
     };
 
     window.onload = init;

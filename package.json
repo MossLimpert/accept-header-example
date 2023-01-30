@@ -9,10 +9,18 @@
     "test": "echo \"Tests complete\""
   },
   "author": "Cody Van De Mark / Austin Willoughby",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "eslint": "^8.33.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MossLimpert/accept-header-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MossLimpert/accept-header-example/issues"
+  },
+  "homepage": "https://github.com/MossLimpert/accept-header-example#readme"
 }
